@@ -11,9 +11,9 @@ public class ConexionDB {
     private static String password;
 
     /**
-     * Valida las credenciales de acceso contra SQL Server abriendo una conexión de prueba.
-     * Si la conexión tiene éxito, guarda la cadena URL y las credenciales en memoria
-     * para reutilizarlas en el resto de los módulos.
+- Valida las credenciales de acceso contra SQL Server abriendo una conexión de prueba.
+- Si la conexión tiene éxito, guarda la cadena URL y las credenciales en memoria
+- para reutilizarlas en el resto de los módulos.
      */
     public static boolean autenticar(String servidor, String puerto, String baseDatos, String user, String pass)
             throws SQLException {
@@ -30,8 +30,8 @@ public class ConexionDB {
     }
 
     /**
-     * Devuelve una nueva conexión activa a SQL Server utilizando los datos
-     * validados previamente en el login.
+- Devuelve una nueva conexión activa a SQL Server utilizando los datos
+- validados previamente en el login.
      */
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(url, usuario, password);
